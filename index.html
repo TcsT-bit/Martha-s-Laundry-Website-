@@ -2,180 +2,207 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARTHA'S LAUNDRY & PROJECTS | WASHING & IRONING SERVICE</title>
-<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiTWFydGhhJ3MgTGF1bmRyeSIsInNob3J0X25hbWUiOiJNTCIsICJzdGFydF91cmwiOiIiLCAiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiIzQ4Njk2NCIsInRoZW1lX2NvbG9yIjoiIzY1OEE0OSIsImljb25zIjpbeyJzcmMiOiJodHRwczovL2kuZW1hZ2Uub3JnL2RhV2dYbWUvV0EtSU1BLTIwMjYwNzMwLTA0MzYxMy5qcGciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvanBlZyJ9XX0=">
-<meta name="theme-color" content="#486964">
-<link rel="apple-touch-icon" href="https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<title>MARTHA'S LAUNDRY & PROJECTS | Professional Washing & Ironing in Praktiseer</title>
+<meta name="description" content="Professional washing, ironing, blankets and shoe cleaning services in Shushumela, Praktiseer. Same day service.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-:root{--bg:#f5f5f5;--card:#fff;--accent:#658A49;--accent2:#486964;--green:#00b894;--blue:#486964;--purple:#6c5ce7;--text:#2d3436;--muted:#636e72;--border:#dfe6e9;--shadow:0 2px 8px rgba(0,0,0,0.1);--danger:#d63031}
-*{box-sizing:border-box;font-family:'Poppins',sans-serif}body{margin:0;background:var(--bg);color:var(--text)}
-html, body{overflow-x:hidden; width:100%}
-.header{background:linear-gradient(90deg,#486964,#658A49);padding:12px;color:#fff;position:sticky;top:0;z-index:99;box-shadow:var(--shadow)}
-.header-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.logo{width:50px;height:50px;border-radius:12px;background:#fff;padding:3px;object-fit:cover}
-.search-box{flex:1;background:#fff;border-radius:25px;padding:8px 15px;display:flex;align-items:center}
-.search-box input{border:none;outline:none;width:100%;background:transparent;color:#000}
-.nav-cats{display:flex;gap:15px;overflow-x:auto;margin-top:10px;padding-bottom:5px;padding-right:15px}
-.nav-cats button{background:rgba(255,255,255,0.2);border:none;color:#fff;padding:6px 12px;border-radius:20px;font-weight:600;cursor:pointer;white-space:nowrap}
-.nav-cats button.active{background:#fff;color:var(--accent);border-bottom:3px solid #000;font-weight:800}
-.container{max-width:100%;margin:0 auto;padding:10px}
-.banner{background:linear-gradient(135deg,#486964,#658A49);color:#fff;padding:20px;border-radius:15px;text-align:center;margin:15px 0;font-weight:800;font-size:18px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.card{background:var(--card);border-radius:12px;padding:10px;box-shadow:var(--shadow);position:relative}
-.card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
-.card h4{margin:8px 0;font-size:14px;min-height:36px}
-.price{color:var(--accent);font-weight:800;font-size:16px}
-.btn-cart{background:var(--accent);color:#fff;border:none;width:100%;padding:10px;border-radius:8px;font-weight:700;cursor:pointer;margin-top:8px}
-.location-card{background:#fff;padding:15px;border-radius:12px;margin:15px 0;box-shadow:var(--shadow)}
-.location-card iframe{width:100%;height:250px;border:none;border-radius:10px;margin-top:10px}
-.bank-info{background:#e8f5e9;border-left:4px solid var(--green);padding:10px;border-radius:8px;margin:10px 0;font-size:12px}
-.site-footer{background:#2d3436;color:#fff;padding:15px 10px;text-align:center;margin-top:20px;font-size:10px}
-.footer-title{font-size:12px;font-weight:700;margin-bottom:4px}
-.footer-line{margin:2px 0}
-.footer-line a{color:#81c784;text-decoration:none}
-.modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);display:none;justify-content:center;align-items:center;z-index:999}
-.modal-content{background:var(--card);padding:20px;border-radius:15px;width:90%;max-width:400px}
-@media(max-width:600px){.grid{grid-template-columns:1fr!important}}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+:root{--green:#658A49;--dark:#486964;--light:#f5f5f5;--text:#2d3436}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--text);line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* NAV */
+nav{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:sticky;top:0;z-index:99}
+nav .container{display:flex;justify-content:space-between;align-items:center;padding:15px 20px}
+nav .logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--dark);font-size:18px}
+nav .logo img{width:45px;height:45px;border-radius:10px}
+nav ul{display:flex;list-style:none;gap:25px}
+nav ul a{text-decoration:none;color:var(--text);font-weight:600}
+nav ul a:hover{color:var(--green)}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,rgba(72,105,100,0.9),rgba(101,138,73,0.9)),url('https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg') center/cover;color:#fff;padding:100px 20px;text-align:center}
+.hero h1{font-size:42px;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:25px}
+.btn{background:var(--green);color:#fff;padding:14px 30px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
+.btn:hover{transform:translateY(-2px)}
+
+/* SECTIONS */
+section{padding:60px 0}
+.section-title{text-align:center;font-size:32px;margin-bottom:10px;color:var(--dark)}
+.section-sub{text-align:center;color:#666;margin-bottom:40px}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.service-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:20px;text-align:center;transition:0.3s}
+.service-card:hover{box-shadow:0 5px 20px rgba(0,0,0,0.1);transform:translateY(-5px)}
+.service-card h3{color:var(--green);margin:10px 0}
+.service-card .price{font-size:24px;font-weight:800;color:var(--dark)}
+.service-card .price span{font-size:14px;font-weight:400}
+
+/* ABOUT */
+.about{background:var(--light)}
+.about-content{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about img{width:100%;border-radius:12px}
+
+/* INFO CARDS */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.info-card{background:#fff;padding:25px;border-radius:12px;border-left:4px solid var(--green)}
+.info-card h4{margin-bottom:10px;color:var(--dark)}
+
+/* LOCATION */
+.location iframe{width:100%;height:350px;border:none;border-radius:12px}
+
+/* CONTACT */
+.contact{background:var(--dark);color:#fff;text-align:center}
+.contact .btn{background:#fff;color:var(--dark)}
+
+/* FOOTER */
+footer{background:#1a1a1a;color:#aaa;padding:30px 20px;text-align:center;font-size:14px}
+
+@media(max-width:768px){
+  nav ul{display:none}
+  .hero h1{font-size:28px}
+  .about-content{grid-template-columns:1fr}
 </style>
 </head>
 <body>
 
-<div id="customerModal" class="modal"> 
-  <div class="modal-content"> 
-    <h3>🧺 Book Service</h3> 
-    <input type="text" id="custName" placeholder="Your Name"> 
-    <input type="tel" id="custPhone" placeholder="Your Phone Number"> 
-    <input type="email" id="custEmail" placeholder="Your Email Address"> 
-    <div class="bank-info">
-      <b>🏦 Payment:</b><br>
-      Capitec: 2218290827<br>
-      <b>Reference:</b> Your Name + Phone<br>
-      Send proof to WhatsApp after booking
-    </div> 
-    <button class="btn-cart" onclick="sendWhatsApp()" style="width:100%">Book via WhatsApp</button> 
-    <button class="btn-cart" onclick="document.getElementById('customerModal').style.display='none'" style="width:100%;margin-top:8px;background:#ccc">Cancel</button> 
-  </div> 
-</div>
-
-<div class="header">
-  <div class="header-top">
-    <img src="https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg" class="logo">
-    <h2 style="margin:0;font-size:16px">MARTHA'S LAUNDRY</h2>
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg" alt="Logo">
+      MARTHA'S LAUNDRY
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
-  <div class="nav-cats">
-    <button onclick="filterCat('All')" class="active">All</button>
-    <button onclick="filterCat('Washing')">Washing</button>
-    <button onclick="filterCat('Blankets')">Blankets</button>
-    <button onclick="filterCat('Shoes')">Shoes</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Professional Laundry & Ironing Service</h1>
+    <p>Clean clothes, Happy life. Same day service in Shushumela, Praktiseer</p>
+    <a href="#contact" class="btn">Book Now via WhatsApp</a>
   </div>
-</div>
+</section>
 
-<div class="container">
-  <div class="banner">🧺 WASHING & IRONING SERVICE 🧺</div>
-  
-  <div class="bank-info">
-    <b>🏦 Pay to:</b> Capitec Account 2218290827 | 
-    <b>📱 Orders:</b> <a href="tel:0607557560">060 755 7560</a>
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Our Services & Pricing</h2>
+    <p class="section-sub">Quality washing and ironing at affordable prices</p>
+    <div class="services-grid" id="servicesGrid"></div>
   </div>
+</section>
 
-  <!-- GPS LOCATION -->
-  <div class="location-card">
-    <h3>📍 Visit Us</h3>
-    <p><b>Address:</b> Ext. 2, House No 3090, Shushumela, Praktiseer, Limpopo</p>
-    <p><b>Hours:</b> Mon - Sat: 7am - 6pm | Sun: 8am - 2pm</p>
-    <a href="https://wa.me/27607557560" target="_blank" class="btn-cart" style="display:block;text-align:center;margin:10px 0;background:var(--green)">💬 WhatsApp Us</a>
-    <a href="https://maps.google.com/?q=Shushumela+Praktiseer+3090" target="_blank" class="btn-cart" style="display:block;text-align:center;margin:10px 0;background:var(--blue)">🧭 Get Directions</a>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593!2d30.5!3d-24.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzAwLjAiUyAzMMKwMzAnMDAuMCJF!5e0!3m2!1sen!2sza!4v1" allowfullscreen="" loading="lazy"></iframe>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <div>
+        <h2 class="section-title" style="text-align:left">About Martha's Laundry</h2>
+        <p>We are a locally owned laundry service dedicated to giving your clothes the care they deserve. Using quality detergents and professional equipment, we ensure your garments come back fresh, clean and neatly ironed.</p>
+        <br>
+        <p><b>Why choose us:</b></p>
+        <p>✓ Same day service available<br>
+           ✓ Affordable prices<br>
+           ✓ Careful handling of all fabrics<br>
+           ✓ Convenient location in Praktiseer</p>
+      </div>
+      <img src="https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg" alt="Laundry Service">
+    </div>
   </div>
+</section>
 
-  <h2 style="margin:20px 0">📋 Services & Pricing</h2>
-  <div class="grid" id="productGrid"></div>
-</div>
+<!-- INFO -->
+<section>
+  <div class="container">
+    <div class="info-grid">
+      <div class="info-card">
+        <h4>🏦 Payment Details</h4>
+        <p><b>Bank:</b> Capitec<br>
+        <b>Account:</b> 2218290827<br>
+        <b>Reference:</b> Your Name + Phone</p>
+      </div>
+      <div class="info-card">
+        <h4>⏰ Business Hours</h4>
+        <p><b>Mon - Sat:</b> 7:00 AM - 6:00 PM<br>
+        <b>Sunday:</b> 8:00 AM - 2:00 PM<br>
+        <b>Public Holidays:</b> Closed</p>
+      </div>
+      <div class="info-card">
+        <h4>📞 Contact Us</h4>
+        <p><b>Phone:</b> 060 755 7560<br>
+        <b>WhatsApp:</b> 060 755 7560<br>
+        <b>Response time:</b> Within 1 hour</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="site-footer">
-  <div class="footer-title">MARTHA'S LAUNDRY & PROJECTS PTY LTD</div>
-  <div class="footer-line">📞 <a href="tel:0607557560">060 755 7560</a> | 🏦 Capitec: 2218290827</div>
-  <div class="footer-line">📍 Ext. 2, House No 3090, Shushumela, Praktiseer</div>
-  <div class="footer-copy">© 2026 MARTHA'S LAUNDRY. Clean clothes, Happy life!</div>
-</div>
+<!-- LOCATION -->
+<section id="location">
+  <div class="container">
+    <h2 class="section-title">Visit Our Laundry</h2>
+    <p class="section-sub">Ext. 2, House No 3090, Shushumela, Praktiseer, Limpopo</p>
+    <div class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593!2d30.5!3d-24.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzAwLjAiUyAzMMKwMzAnMDAuMCJF!5e0!3m2!1sen!2sza!4v1" allowfullscreen="" loading="lazy"></iframe>
+      <div style="text-align:center;margin-top:20px">
+        <a href="https://maps.google.com/?q=Shushumela+Praktiseer+3090" target="_blank" class="btn">Get Directions on Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title" style="color:#fff">Ready to Book?</h2>
+    <p style="margin-bottom:25px">Send us a WhatsApp message with your details and preferred service</p>
+    <a href="https://wa.me/27607557560?text=Hello%20Martha's%20Laundry%2C%20I%20would%20like%20to%20book%20a%20service" target="_blank" class="btn">💬 Book on WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p><b>MARTHA'S LAUNDRY & PROJECTS PTY LTD</b></p>
+    <p>Ext. 2, House No 3090, Shushumela, Praktiseer, Limpopo | Tel: 060 755 7560</p>
+    <p>© 2026 Martha's Laundry. All rights reserved.</p>
+  </div>
+</footer>
 
 <script>
-// STATIC DATA - NO FIREBASE
+// SERVICES DATA
 const services = [
-  {name:"Big Basket", category:"Washing", price:500, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Washing & Ironing - Large Load"},
-  {name:"Medium Basket", category:"Washing", price:350, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Washing & Ironing - Medium Load"},
-  {name:"Small Basket", category:"Washing", price:200, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Washing & Ironing - Small Load"},
-  {name:"Big Blanket", category:"Blankets", price:200, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Wash & Dry - Double/Queen"},
-  {name:"Medium Blanket", category:"Blankets", price:130, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Wash & Dry - Single"},
-  {name:"Throw", category:"Blankets", price:50, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Wash & Dry - Throw Blanket"},
-  {name:"Shoes White", category:"Shoes", price:50, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Wash & Polish - Sneakers"},
-  {name:"Shoes Black", category:"Shoes", price:40, img:"https://i.ibb.co/daWgXme/WA-IMG-20260730-043613.jpg", desc:"Wash & Polish - School/Work"}
+  {name:"Big Basket", category:"Washing", price:500, desc:"Washing & Ironing - Large Load"},
+  {name:"Medium Basket", category:"Washing", price:350, desc:"Washing & Ironing - Medium Load"},
+  {name:"Small Basket", category:"Washing", price:200, desc:"Washing & Ironing - Small Load"},
+  {name:"Big Blanket", category:"Blankets", price:200, desc:"Wash & Dry - Double/Queen"},
+  {name:"Medium Blanket", category:"Blankets", price:130, desc:"Wash & Dry - Single"},
+  {name:"Throw Blanket", category:"Blankets", price:50, desc:"Wash & Dry - Throw"},
+  {name:"White Shoes", category:"Shoes", price:50, desc:"Wash & Polish - Sneakers"},
+  {name:"Black Shoes", category:"Shoes", price:40, desc:"Wash & Polish - School/Work"}
 ];
 
-let cart = [];
-let currentFilter = 'All';
-
-function renderServices(){
-  const grid = document.getElementById('productGrid');
-  grid.innerHTML = '';
-  services.filter(s => currentFilter === 'All' || s.category === currentFilter)
-  .forEach(s => {
-    grid.innerHTML += `
-    <div class="card">
-      <img src="${s.img}" alt="${s.name}">
-      <h4>${s.name}</h4>
-      <p style="font-size:11px;color:#666">${s.desc}</p>
-      <div class="price">R${s.price}</div>
-      <button class="btn-cart" onclick="bookService('${s.name}', ${s.price})">Book Now</button>
-    </div>`;
-  })
-}
-
-function filterCat(cat){
-  currentFilter = cat;
-  document.querySelectorAll('.nav-cats button').forEach(b=>b.classList.remove('active'));
-  event.target.classList.add('active');
-  renderServices();
-}
-
-let selectedService = '';
-let selectedPrice = 0;
-
-function bookService(name, price){
-  selectedService = name;
-  selectedPrice = price;
-  document.getElementById('customerModal').style.display = 'flex';
-}
-
-function sendWhatsApp(){
-  let name = document.getElementById('custName').value.trim(); 
-  let phone = document.getElementById('custPhone').value.trim(); 
-  let email = document.getElementById('custEmail').value.trim();
-  
-  if(!name || !phone) return alert('Please enter Name and Phone');
-  
-  let msg = `🧺 NEW BOOKING - MARTHA'S LAUNDRY\n` +
-            `Service: ${selectedService}\n` +
-            `Price: R${selectedPrice}\n\n` +
-            `Customer: ${name}\n` +
-            `Phone: ${phone}\n` +
-            `Email: ${email}\n\n` +
-            `🏦 Payment: Capitec 2218290827\n` +
-            `Reference: ${name} ${phone}\n\n` +
-            `📍 Address: Ext 2, House 3090, Shushumela, Praktiseer`;
-            
-  window.open(`https://wa.me/27607557560?text=${encodeURIComponent(msg)}`);
-  
-  document.getElementById('customerModal').style.display='none'; 
-  document.getElementById('custName').value=''; 
-  document.getElementById('custPhone').value=''; 
-  document.getElementById('custEmail').value='';
-  alert('Redirecting to WhatsApp...')
-}
-
-// Load on start
-renderServices();
+const grid = document.getElementById('servicesGrid');
+services.forEach(s => {
+  grid.innerHTML += `
+  <div class="service-card">
+    <h3>${s.name}</h3>
+    <p>${s.desc}</p>
+    <div class="price">R${s.price}<span>.00</span></div>
+  </div>`;
+})
 </script>
 </body>
 </html>
